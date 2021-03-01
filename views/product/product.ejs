@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="jumbotron col">
+        <div class="col">
+            <h1 style="word-wrap: break-word;"><%= product.title %></h1>
+            <p style="word-wrap: break-word;" class="lead"><%= product.description %></p>
+            <p><b>Creation Date </b>: <%=  product.created_date %></p>
+            <p><b>Modification Date </b>: <%= product.modified_date %></p>
+            <div class="lead">
+                <a href="/products" class="btn btn-sm btn-secondary">&lt;&lt; Back</a>
+                <span class="float-right">
+                    <a class="btn btn-sm btn-primary btn-lg" href="/products/edit/<%=product.id%>"
+                        role="button">Edit</a>
+                    <form class="d-inline-block" action="/products/delete/<%=product.id%>" method="POST">
+                        <button class="btn btn-sm btn-danger btn-lg" type="submit" role="button">Delete</button>
+                    </form>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

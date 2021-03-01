@@ -1,0 +1,15 @@
+{
+    "http": {
+        "port": 3000,
+        "host": "localhost"
+    },
+    "db": {
+        "user": "postgres",
+        "host": "localhost",
+        "database": "amazon_products",
+        "password": "Slash@123",
+        "port": 5432,
+        "idleTimeoutMillis": 30000,
+        "connectionTimeoutMillis": 2000
+    }
+}
